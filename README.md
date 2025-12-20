@@ -69,3 +69,13 @@ fraud-detection/
 ```bash
 pip install -r requirements.txt
 ```
+
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+imbalanced-learn
+shap
+joblib

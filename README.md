@@ -59,23 +59,65 @@ fraud-detection/
 
 ## Setup Instructions
 
-### 1. Prerequisites
+### Prerequisites
 
-- Python 3.8+ (tested with 3.11/3.12)
-- Jupyter Notebook or JupyterLab
+- Python 3.9+
+- Git
+- Virtual environment (venv or conda)
 
-### 2. Install Dependencies
+### Installation Steps
+
+**Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/fraud-detection.git
+cd fraud-detection
+```
+
+**Create and activate virtual environment**
+
+```bash
+   # Using venv
+   python -m venv venv
+   source venv/bin/activate          # Linux/Mac
+   # OR Windows
+   venv\Scripts\activate
+
+   # Using conda (alternative)
+   conda create -n fraud-detection python=3.11
+   conda activate fraud-detection
+```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-xgboost
-imbalanced-learn
-shap
-joblib
+**Prepare data**
+
+```bash
+ Place the three CSV files into data/raw/:
+   Fraud_Data.csv
+   creditcard.csv
+   IpAddress_to_Country.csv
+```
+
+**Requirements**
+
+```bash
+ # requirements.txt
+   pandas>=2.0.0
+   numpy>=1.24.0
+   joblib==1.5.2
+   scikit-learn>=1.3.0
+   xgboost>=2.0.0
+   imbalanced-learn>=0.11.0
+   matplotlib>=3.7.0
+   seaborn>=0.12.0
+   jupyter>=1.0.0
+   notebook>=7.0.0
+   shap>=0.45.0
+   tqdm>=4.66.0
+   pyarrow>=14.0.0
+```
